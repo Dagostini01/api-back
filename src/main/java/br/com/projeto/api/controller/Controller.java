@@ -26,4 +26,9 @@ public class Controller {
         return acao.save(c);
     }
 
+    @DeleteMapping("/{id}")
+    public void remover(@PathVariable long id){
+        acao.deleteById(id);
+    }
+
 }
